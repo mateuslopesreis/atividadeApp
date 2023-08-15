@@ -1,0 +1,53 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+      <ion-title>Usuário</ion-title>
+    </ion-buttons>
+  </ion-toolbar>
+  
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-item fill="outline" >
+   
+    <ion-input placeholder="Categoria"
+     type="text"></ion-input>      
+</ion-item>
+
+<ion-item fill="outline">
+ 
+  <ion-input placeholder="nome"
+   type="text"></ion-input>    
+
+</ion-item>
+
+<ion-item fill="outline" >
+   
+  <ion-input placeholder="CPF"
+   type="text"></ion-input>      
+</ion-item>
+
+<ion-item fill="outline" >
+   
+  <ion-input placeholder="Telefone"
+   type="text"></ion-input>      
+</ion-item>
+
+<ion-item fill="outline" >
+   
+  <ion-input placeholder="Email"
+   type="text"></ion-input>      
+</ion-item>
+
+<ion-item fill="outline" >
+   
+  <ion-input placeholder="Senha"
+   type="text"></ion-input>      
+</ion-item>
+
+<ion-button expand="block" (click)="presentToast('top')">Cadastrar</ion-button>
+
+
+
+</ion-content>
