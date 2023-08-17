@@ -24,10 +24,35 @@
 
 #container a {
   text-decoration: none;
+  
+}
+
+.controlador{
+  padding: 5px;
+}
+
+.avatarTopo{
+  margin-top: 100px;
+  margin-bottom: 30px;
 }
 
 ion-avatar {
+  margin: auto;
+  
+}
+
+.inputAcesso{
+  border: 1px solid;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+ion-button{
+  width: 90%;
+  margin: auto;
+}
+
+.btnEnvio{
   display: flex;
-  flex-direction: column;
   align-items: center;
 }

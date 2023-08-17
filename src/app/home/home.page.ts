@@ -9,23 +9,44 @@ import { NavController } from '@ionic/angular';
 })
 export class HomePage implements OnInit {
 
+  public pessoa={
+    usuario: '',
+    senha:    ''
+  }
+
   constructor(private toast: ToastController, public nav: NavController) {}
 
 
 
   async presentToast(position: 'top' | 'middle' | 'bottom') {
-    const toast = await this.toast.create({
-      message: 'Bem vindo ',
-      duration: 2000,
-      position: position,
-    });
+   
+    if(this.pessoa.usuario=='mateus' && this.pessoa.senha=='123'){
+      
+      const toast = await this.toast.create({
+        message: 'Bem vindo ',
+        duration: 2000,
+        position: position,
+      });
+  
+      await toast.present();
 
-    await toast.present();
+    }
+
+   
   }
 
+  
+
   abrirPagina(x: string){
-    //console.log("Você clicou no botão");
-    this.nav.navigateForward(x);
+    if(this.pessoa.usuario=='mateus' && this.pessoa.senha=='123'){
+            this.nav.navigateForward(x);
+
+    }
+
+  }
+
+  abrirPagina2(x: string){
+      this.nav.navigateForward(x);
 
   }
 

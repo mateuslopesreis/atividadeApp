@@ -2,35 +2,36 @@
  
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content class="controlador" [fullscreen]="true">
   
-<ion-avatar >
+<ion-avatar class="avatarTopo" >
   <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
 </ion-avatar>
 
-<ion-list >
+
   <ion-item >
    
-      <ion-input placeholder="Usuario"
-       type="text"></ion-input>      
+      <ion-input class="inputAcesso" placeholder="Usuario"
+       type="text" [(ngModel)]="pessoa.usuario"></ion-input>      
   </ion-item>
 
   <ion-item >
    
-    <ion-input placeholder="Senha"
-     type="text"></ion-input>    
+    <ion-input class="inputAcesso" placeholder="Senha"
+     type="text" [(ngModel)]="pessoa.senha"></ion-input>    
    
 
 </ion-item>
-</ion-list>
 
-<ion-button expand="block" (click)="presentToast('top')">Acessar</ion-button>
+
+<ion-button class="btnEnvio" (click)="abrirPagina('dashboard')">Acessar</ion-button>
 
 <ion-item >
    
   'Ainda não cadastrado?'
 
 </ion-item>
-<ion-button (click)="abrirPagina('cadastro')">Cadastrar</ion-button>
+<ion-button  class="btnEnvio" (click)="abrirPagina2('cadastro')">Cadastrar</ion-button>
 
 </ion-content>
+
